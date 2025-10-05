@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "countrypovertyanalysis"
+version = "0.1.0"
+description = ""
+authors = ["Instituto Juan de Mariana"]
+license = "Creative Commons Atribución–NoComercial 4.0 Internacional (CC BY-NC 4.0)"
+readme = "README.md"
+packages = [{ include = "app" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+black = "^24.0.0"
+mypy = "^1.10.0"
+ruff = "^0.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
